@@ -21,4 +21,51 @@ Algoritmo CalcularPromedio
 		
 FinAlgoritmo
 
-------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------
+
+EJERCICIO 2: Un pintor de casas debe hacer un presupuesto para un cliente. Lo que cobra se calcula de acuerdo a los metros 
+cuadrados que debe pintar. El cliente le indica que necesita conocer el costo de mano de obra para pintar una pared 
+rectangular de un galpón. El pintor cobra un monto ﬁjo por cada metro cuadrado. 
+Puedes hacer un algoritmo para calcular el costo de mano de obra para pintar la pared.
+
+
+Algoritmo CalcularCostoPintura
+    	Definir altura, ancho, costo_por_m2, costo_total Como Real
+
+   		 Escribir "Ingrese la altura de la pared en metros:"
+    		 Leer altura
+    		 Escribir "Ingrese el ancho de la pared en metros:"
+    		 Leer ancho
+   		 Escribir "Ingrese el costo por metro cuadrado:"
+   		 Leer costo_por_m2
+
+    		costo_total = altura * ancho * costo_por_m2
+
+    		Escribir "El costo total de la mano de obra para pintar la pared es: $", costo_total
+
+	FinAlgoritmo
+
+--------------------------------------------------------------------------------------------------------
+
+EJERCICIO 3: Un hincha de fútbol desea conocer la cantidad de puntos que su equipo lleva acumulados en el campeonato, para 
+ello recibe cada semana la información de la cantidad total de partidos, desde el inicio del campeonato, que el equipo ha 
+perdido, ha empatado y ha ganado. Por cada partido empatado recibe un punto, por cada partido ganado tres puntos y por los 
+perdidos cero puntos.
+
+
+Algoritmo CalcularPuntosEquipo
+    Definir partidos_ganados, partidos_empatados, partidos_perdidos, puntos_totales Como Entero
+
+    Escribir "Ingrese la cantidad de partidos ganados: "
+    Leer partidos_ganados
+    Escribir "Ingrese la cantidad de partidos empatados: "
+    Leer partidos_empatados
+    Escribir "Ingrese la cantidad de partidos perdidos: "
+    Leer partidos_perdidos
+
+    puntos_totales = (partidos_ganados * 3) + (partidos_empatados * 1)
+
+    Escribir "El equipo ha acumulado ", puntos_totales, "puntos."
+FinAlgoritmo
+
+
