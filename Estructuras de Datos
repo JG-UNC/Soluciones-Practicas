@@ -1,0 +1,118 @@
+EJERCICIO 1:
+Pedir al usuario que ingrese 10 nombres de personas (input en un ciclo) no repetidas, guardarlos en una lista y mostrarlos.
+
+Descripción: Este programa pide al usuario que ingrese 10 nombres de personas no repetidas, los guarda en una lista 
+y luego los muestra.
+
+nombres = []
+
+while len(nombres) < 10:
+    nombre = input("Ingrese un nombre: ")
+    if nombre not in nombres:
+        nombres.append(nombre)
+    else:
+        print("El nombre ya ha sido ingresado. Ingrese un nombre diferente.")
+
+print("Nombres ingresados:")
+for nombre in nombres:
+    print(nombre)
+
+
+EJERCICIO 2:
+Eliminar la tercer y la última persona de la lista del ejercicio 1, luego ordenar la lista y mostrarla.
+
+Descripción: Este programa elimina la tercera y la última persona de una lista, luego ordena la lista y la muestra.
+
+Lista de nombres del ejercicio 1
+
+nombres = ['Ana', 'Beto', 'Carlos', 'Diana', 'Elena', 'Fernando', 'Gloria', 'Hugo', 'Isabel', 'Juan']
+
+Eliminar la tercera persona (índice 2) y la última persona (índice -1)
+del nombres[2]
+del nombres[-1]
+
+Ordenar la lista
+nombres.sort()
+
+Mostrar la lista ordenada
+print("Lista después de eliminar y ordenar:")
+for nombre in nombres:
+    print(nombre)
+
+
+EJERCICIO 3:
+Guardar en un diccionario los datos de una persona: nombre, apellido, dni, email, fecha de nacimiento.
+
+Descripción: Este programa guarda los datos de una persona en un diccionario.
+
+persona = {
+    "nombre": "Carlos",
+    "apellido": "Pérez",
+    "dni": "12345678",
+    "email": "carlos.perez@example.com",
+    "fecha_nacimiento": "01/01/1980"
+}
+
+# Mostrar el diccionario
+print("Datos de la persona:")
+for key, value in persona.items():
+    print(f"{key}: {value}")
+
+
+Ejercicio 4:
+En un nuevo diccionario llamado familia guardar 4 personas, cada una de ellas con los mismos 5 datos.
+
+Descripción: Este programa guarda los datos de cuatro personas en un diccionario llamado familia.
+
+familia = {
+    "persona1": {
+        "nombre": "Carlos",
+        "apellido": "Pérez",
+        "dni": "12345678",
+        "email": "carlos.perez@example.com",
+        "fecha_nacimiento": "01/01/1980"
+    },
+    "persona2": {
+        "nombre": "Ana",
+        "apellido": "Gómez",
+        "dni": "87654321",
+        "email": "ana.gomez@example.com",
+        "fecha_nacimiento": "02/02/1985"
+    },
+    "persona3": {
+        "nombre": "Beto",
+        "apellido": "Rodríguez",
+        "dni": "11223344",
+        "email": "beto.rodriguez@example.com",
+        "fecha_nacimiento": "03/03/1990"
+    },
+    "persona4": {
+        "nombre": "Diana",
+        "apellido": "López",
+        "dni": "55667788",
+        "email": "diana.lopez@example.com",
+        "fecha_nacimiento": "04/04/1995"
+    }
+}
+
+Mostrar el diccionario
+
+print("Datos de la familia:")
+for key, datos in familia.items():
+    print(f"{key}:")
+    for dato_key, dato_value in datos.items():
+        print(f"  {dato_key}: {dato_value}")
+
+
+EJERCICIO 5:
+Guardar en una tupla los primeros n números pares. El valor de n que lo ingrese el usuario (input). 
+Luego mostrar los datos de la tupla.
+
+Descripción: Este programa guarda en una tupla los primeros `n` números pares ingresados por el usuario y luego los muestra.
+
+n = int(input("Ingrese el valor de n: "))
+numeros_pares = tuple([i for i in range(2*n) if i % 2 == 0])
+
+print("Números pares:")
+for numero in numeros_pares:
+    print(numero)
