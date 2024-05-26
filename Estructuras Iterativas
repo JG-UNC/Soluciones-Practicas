@@ -1,0 +1,207 @@
+Ejercicio 1: 
+Mostrar los números desde el 0 al número solicitado al usuario.
+
+Análisis
+Entrada: número límite (numero_limite de tipo int)
+Salida: números desde 0 hasta numero_limite
+Descripción: Este programa muestra los números desde 0 hasta el número ingresado por el usuario.
+
+PSEINT:
+
+Algoritmo mostrar_numeros
+    Definir numero_limite Como Entero
+    Escribir "Ingrese un número: "
+    Leer numero_limite
+    Para i <- 0 Hasta numero_limite Hacer
+        Escribir i
+    FinPara
+FinAlgoritmo
+
+Python:
+
+numero_limite = int(input("Ingrese un número: "))
+for i in range(numero_limite + 1):
+    print(i)
+
+
+Ejercicio 2: 
+Mostrar sólo los números pares desde 0 hasta el número ingresado
+
+Análisis
+Entrada: número límite (numero_limite de tipo int)
+Salida: números pares desde 0 hasta numero_limite
+Descripción: Este programa muestra solo los números pares desde 0 hasta el número ingresado por el usuario.
+
+PSEINT:
+
+Algoritmo mostrar_numeros_pares
+    Definir numero_limite Como Entero
+    Escribir "Ingrese un número: "
+    Leer numero_limite
+    Para i <- 0 Hasta numero_limite Con Paso 1 Hacer
+        Si i % 2 = 0 Entonces
+            Escribir i
+        FinSi
+    FinPara
+FinAlgoritmo
+
+PYTHON:
+
+numero_limite = int(input("Ingrese un número: "))
+for i in range(numero_limite + 1):
+    if i % 2 == 0:
+        print(i)
+
+
+Ejercicio 3: 
+Pedir nombres de personas hasta que el valor ingresado sea "fin"
+
+
+Análisis
+Entrada: nombres de personas (nombre de tipo str)
+Salida: nombres ingresados excepto "fin"
+Descripción: Este programa pide nombres de personas y los muestra hasta que el valor ingresado sea "fin".
+
+PSEINT:
+
+Algoritmo pedir_nombres
+    Definir nombre Como Cadena
+    Escribir "Ingrese nombres de personas (escriba 'fin' para terminar):"
+    Repetir
+        Leer nombre
+        Si nombre <> "fin" Entonces
+            Escribir nombre
+        FinSi
+    Hasta Que nombre = "fin"
+FinAlgoritmo
+
+PYTHON:
+
+while True:
+    nombre = input("Ingrese un nombre (escriba 'fin' para terminar): ")
+    if nombre.lower() == "fin":
+        break
+    print(nombre)
+
+
+
+Ejercicio 4: 
+Calcular el promedio de notas y determinar el rendimiento
+
+Análisis
+Entrada: cantidad de estudiantes (cantidad_estudiantes de tipo int), notas de los estudiantes (nota de tipo float)
+Salida: promedio de notas (promedio de tipo float), rendimiento (rendimiento de tipo str)
+Descripción: Este programa calcula el promedio de notas de los estudiantes y determina el rendimiento.
+
+PSEINT:
+
+Algoritmo calcular_promedio_rendimiento
+    Definir cantidad_estudiantes, i Como Entero
+    Definir nota, suma_notas, promedio Como Real
+    suma_notas = 0
+    
+    Escribir "Ingrese la cantidad de estudiantes: "
+    Leer cantidad_estudiantes
+    
+    Para i <- 1 Hasta cantidad_estudiantes Hacer
+        Escribir "Ingrese la nota del estudiante ", i, ": "
+        Leer nota
+        suma_notas = suma_notas + nota
+    FinPara
+    
+    promedio = suma_notas / cantidad_estudiantes
+    
+    Si promedio > 8 Entonces
+        Escribir "Rendimiento elevado"
+    Sino
+        Si promedio >= 6 Entonces
+            Escribir "Rendimiento aceptable"
+        Sino
+            Escribir "Rendimiento bajo"
+        FinSi
+    FinSi
+    
+    Escribir "El promedio de notas es: ", promedio
+FinAlgoritmo
+
+PYTHON:
+
+cantidad_estudiantes = int(input("Ingrese la cantidad de estudiantes: "))
+suma_notas = 0
+
+for i in range(cantidad_estudiantes):
+    nota = float(input(f"Ingrese la nota del estudiante {i + 1}: "))
+    suma_notas += nota
+
+promedio = suma_notas / cantidad_estudiantes
+
+if promedio > 8:
+    print("Rendimiento elevado")
+elif promedio >= 6:
+    print("Rendimiento aceptable")
+else:
+    print("Rendimiento bajo")
+
+print(f"El promedio de notas es: {promedio}")
+
+
+Ejercicio 5.1: 
+Generar la tabla de multiplicar usando mientras
+
+Análisis
+Entrada: número para la tabla (numero de tipo int)
+Salida: tabla de multiplicar del número
+Descripción: Este programa genera la tabla de multiplicar de un número entre 1 y 10 utilizando un bucle mientras.
+
+PSEINT:
+
+Algoritmo tabla_multiplicar_mientras
+    Definir numero, i Como Entero
+    Escribir "Ingrese un número entre 1 y 10: "
+    Leer numero
+    
+    i = 1
+    Mientras i <= 10 Hacer
+        Escribir numero, " x ", i, " = ", numero * i
+        i = i + 1
+    FinMientras
+FinAlgoritmo
+
+
+PYTHON:
+
+numero = int(input("Ingrese un número entre 1 y 10: "))
+i = 1
+
+while i <= 10:
+    print(f"{numero} x {i} = {numero * i}")
+    i += 1
+
+
+Ejercicio 5.2: 
+Generar la tabla de multiplicar usando para
+
+Análisis
+Entrada: número para la tabla (numero de tipo int)
+Salida: tabla de multiplicar del número
+Descripción: Este programa genera la tabla de multiplicar de un número entre 1 y 10 utilizando un bucle para.
+
+PSEINT:
+
+Algoritmo tabla_multiplicar_para
+    Definir numero, i Como Entero
+    Escribir "Ingrese un número entre 1 y 10: "
+    Leer numero
+    
+    Para i <- 1 Hasta 10 Hacer
+        Escribir numero, " x ", i, " = ", numero * i
+    FinPara
+FinAlgoritmo
+
+PYTHON:
+
+numero = int(input("Ingrese un número entre 1 y 10: "))
+
+for i in range(1, 11):
+    print(f"{numero} x {i} = {numero * i}")
+
