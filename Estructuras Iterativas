@@ -17,7 +17,7 @@ Algoritmo mostrar_numeros
     FinPara
 FinAlgoritmo
 
-Python:
+PYTHON:
 
 numero_limite = int(input("Ingrese un número: "))
 for i in range(numero_limite + 1):
@@ -82,7 +82,6 @@ while True:
     if nombre.lower() == "fin":
         break
     print(nombre)
-
 
 
 Ejercicio 4: 
