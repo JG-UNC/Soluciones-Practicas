@@ -1,6 +1,6 @@
 EJERCICIO 1: Un estudiante está cursando 5 materias, tiene la nota de cada materia y quiere saber cuál es su promedio.
 
-PSINT :
+PSEINT :
 
 Algoritmo CalcularPromedio
 	
@@ -46,7 +46,7 @@ cuadrados que debe pintar. El cliente le indica que necesita conocer el costo de
 rectangular de un galpón. El pintor cobra un monto ﬁjo por cada metro cuadrado. 
 Puedes hacer un algoritmo para calcular el costo de mano de obra para pintar la pared.
 
-PSINT:
+PSEINT:
 
 Algoritmo CalcularCostoPintura
     	Definir altura, ancho, costo_por_m2, costo_total Como Real
@@ -86,7 +86,7 @@ ello recibe cada semana la información de la cantidad total de partidos, desde 
 perdido, ha empatado y ha ganado. Por cada partido empatado recibe un punto, por cada partido ganado tres puntos y por los 
 perdidos cero puntos.
 
-PSINT:
+PSEINT:
 
 Algoritmo CalcularPuntosEquipo
     Definir partidos_ganados, partidos_empatados, partidos_perdidos, puntos_totales Como Entero
