@@ -11,7 +11,7 @@ Este programa calcula el monto a pagar en una despensa por la compra de leche de
 según la cantidad comprada y si el cliente es jubilado.
 
 
-Psint:
+PSEINT:
 
 Algoritmo calcular_monto_a_pagar
     Definir unidadesDeLeche Como Entero
@@ -43,7 +43,7 @@ Algoritmo calcular_monto_a_pagar
 FinAlgoritmo
 
 
-Python:
+PYTHON:
 
 unidadesDeLeche = int(input("Ingrese la cantidad de unidades de leche: "))
 esJubilado = input("Es jubilado? (si/no): ").strip().lower() == 'si'
